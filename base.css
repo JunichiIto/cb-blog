@@ -1,338 +1,389 @@
 .blk .pagenavi {
-  text-align:left;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:12px;
-  color:#999;
-  margin-bottom:30px;
-  padding:5px 0 0;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 30px;
+  padding: 5px 0 0;
 }
 
-  .blk .pagenavi a {
-    background:#FFF;
-    display:inline-block;
-    color:#666;
-    line-height:2;
-    text-decoration:none;
-    border:1px solid #E5E5E5;
-    margin:5px 5px 0 0;
-    padding:2px 8px;
-  }
-  .blk .pagenavi .current {
-    color:#666;
-    background:#E5E5E5;
-    border:1px solid #E5E5E5;
-    font-weight:700;
-    line-height:2;
-  }
-  .blk .pagenavi span,.pagenavi a:hover {
-    display:inline-block;
-    margin:5px 5px 0 0;
-    padding:2px 8px;
-  }
-    .blk .pagenavi a:hover {
-      font-weight:400;
-      text-decoration:none;
-      background:#E5E5E5;
-      color:#333;
-    }
+.blk .pagenavi a {
+  background: #FFF;
+  display: inline-block;
+  color: #666;
+  line-height: 2;
+  text-decoration: none;
+  border: 1px solid #E5E5E5;
+  margin: 5px 5px 0 0;
+  padding: 2px 8px;
+}
+
+.blk .pagenavi .current {
+  color: #666;
+  background: #E5E5E5;
+  border: 1px solid #E5E5E5;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.blk .pagenavi span,
+.pagenavi a:hover {
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  padding: 2px 8px;
+}
+
+.blk .pagenavi a:hover {
+  font-weight: 400;
+  text-decoration: none;
+  background: #E5E5E5;
+  color: #333;
+}
+
 .pagenavi {
-  text-align:left;
+  text-align: left
 }
 
-.archivelist_t li,.archivelist_c li,.archivelist_m li {
-  list-style-type:none;
-  list-style:none outside;
-  margin:10px 0;
+.archivelist_t li,
+.archivelist_c li,
+.archivelist_m li {
+  list-style-type: none;
+  list-style: none outside;
+  margin: 10px 0;
 }
 
-#all_title_view,#default_title_view {
-  font-weight:700;
-  margin:1em 0 10px;
+#all_title_view,
+#default_title_view {
+  font-weight: 700;
+  margin: 1em 0 10px;
 }
 
 ul#archive_info div {
-  display:inline;
+  display: inline
 }
 
 div.TIME {
-  margin-left:5px;
+  margin-left: 5px
 }
 
 ul.menu_bookmark {
-  list-style-position:outside;
+  list-style-position: outside
 }
 
 html {
-  margin-top:0!important;
+  margin-top: 0!important
 }
 
 #post span table {
-  display:block;
+  display: block
 }
 
 div.COMMENT {
-  border:1px #d3d3d3 solid;
-  background:#f7f7f7;
-  width:400px;
-  margin:20px auto 0 0;
-  padding:15px;
+  border: 1px #d3d3d3 solid;
+  background: #f7f7f7;
+  width: 400px;
+  margin: 20px auto 0 0;
+  padding: 15px;
 }
 
 div.COMMENT_BODY {
-  margin-bottom:20px;
-  line-height:130%;
+  margin-bottom: 20px;
+  line-height: 130%;
 }
 
 div.COMMENT_TAIL {
-  font:8pt/150% tahoma;
-  color:#777;
-  margin:8px 0 5px;
+  font: 8pt/150% tahoma;
+  color: #777;
+  margin: 8px 0 5px;
 }
 
 div.COMMENT_INPUT {
-  margin-top:20px;
-  border-top:1px #aaa dotted;
-  padding-top:20px;
+  margin-top: 20px;
+  border-top: 1px #aaa dotted;
+  padding-top: 20px;
 }
 
 div.COMMENT_LINE {
-  border-top:1px #aaa dotted;
-  margin:10px 0 15px;
+  border-top: 1px #aaa dotted;
+  margin: 10px 0 15px;
 }
 
 * {
-  line-height:1.5;
-  color:#666;
-  font-weight:400;
-  font-style:normal;
-  margin:0;
-  padding:0;
+  line-height: 1.5;
+  color: #666;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background:#2d1f13;
-  font-family:"Trebuchet MS", Helvetica, sans-serif;
-  font-size:small;
-  font:x-small;
-  margin:0 10px;
+  background: #2d1f13;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: small;
+  font: x-small;
+  margin: 0 10px;
 }
 
 p {
-  margin:.8em 0;
+  margin: .8em 0
 }
 
-h2,h3 {
-  line-height:1.2;
-  margin:0;
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 0;
 }
 
 h1 a {
-  display:block;
-  width:253px;
-  height:49px;
-  background:transparent url(http://coupe-baguette.com/assets/cb_logo.jpg) 0 0 no-repeat;
-  text-indent:-9999px;
-  overflow:hidden;
+  display: block;
+  width: 253px;
+  height: 49px;
+  background: transparent url(http://coupe-baguette.com/assets/cb_logo.jpg) 0 0 no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 
 div#header .title {
-  color:#6B492D;
+  color: #6B492D
 }
 
 div#sitename {
-  position:relative;
+  position: relative
 }
 
 div#ruby {
-  top:22px;
-  left:333px;
-  position:absolute;
+  top: 22px;
+  left: 333px;
+  position: absolute;
 }
 
 div#blogimg {
-  top:4px;
-  left:252px;
-  position:absolute;
+  top: 4px;
+  left: 252px;
+  position: absolute;
 }
 
 h2 {
-  font-size:120%;
+  font-size: 120%
 }
 
 h3 {
-  font-size:110%;
-  margin:1.2em 10px .2em;
+  font-size: 110%;
+  margin: 1.2em 10px .2em;
 }
 
-ul,ol,dl {
-  list-style-position:inside;
-  margin:.8em 0;
-  padding:1px 0;
+ul,
+ol,
+dl {
+  list-style-position: inside;
+  margin: .8em 0;
+  padding: 1px 0;
 }
 
-dt,dt label,div.mntitle {
-  color:#8B4513;
+dt,
+dt label,
+div.mntitle {
+  color: #8B4513
 }
 
 dt {
-  margin:.8em 10px 0 0;
+  margin: .8em 10px 0 0
 }
 
 div.COMMENT_INPUT input[type="SUBMIT"] {
-  background-color:#F5F5F5;
-  border:1px solid #AAA;
-  color:#666;
-  text-decoration:none;
-  height:auto!important;
-  width:100px!important;
-  cursor:pointer;
-  font-weight:700;
-  padding:7px;
+  background-color: #F5F5F5;
+  border: 1px solid #AAA;
+  color: #666;
+  text-decoration: none;
+  height: auto!important;
+  width: 100px!important;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 7px;
 }
 
-div#header,div#content,div#footer {
-  width:831px;
-  background-color:#FFF;
-  text-align:left;
-  margin:auto;
-  padding:0 30px;
+div#header,
+div#content,
+div#footer {
+  width: 831px;
+  background-color: #FFF;
+  text-align: left;
+  margin: auto;
+  padding: 0 30px;
 }
 
 div#footer {
-  font-size:90%;
+  font-size: 90%
 }
 
 div#pager {
-  margin-bottom:5px;
+  margin-bottom: 5px
 }
 
 div#post {
-  float:left;
-  width:630px;
-  background-color:#FFF;
+  float: left;
+  width: 630px;
+  background-color: #FFF;
 }
 
 div#sidemenu {
-  float:right;
-  width:170px;
-  background-color:#FFF;
-  margin:0 0 0 20px;
+  float: right;
+  width: 170px;
+  background-color: #FFF;
+  margin: 0 0 0 20px;
 }
 
 div#header {
-  padding-top:6px;
-  position:relative;
+  padding-top: 6px;
+  position: relative;
 }
 
-  div#header div.description {
-    position:relative;
-    padding-bottom:15px;
-  }
-  div#header ul {
-    margin:0;
-    padding:10px 0;
-  }
+div#header div.description {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+div#header ul {
+  margin: 0;
+  padding: 10px 0;
+}
+
 .menuitem {
-  margin:20px 0;
+  margin: 20px 0
 }
 
 .mntitle {
-  border-bottom:1px solid #AAA;
+  border-bottom: 1px solid #AAA
 }
 
 div#logoimage {
-  margin-top:20px;
+  margin-top: 20px
 }
 
 div.postsubject {
-  margin-top:20px;
-  height:22px;
-  border-bottom:1px solid #AAA;
+  margin-top: 20px;
+  height: 22px;
+  border-bottom: 1px solid #AAA;
 }
 
 h2.subj {
-  float:left;
-  width:auto;
+  float: left;
+  width: auto;
 }
 
 div.postdate {
-  float:right;
-  width:100px;
-  text-align:right;
-  font-size:90%;
-  margin-top:6px;
-  color:#888;
+  float: right;
+  width: 100px;
+  text-align: right;
+  font-size: 90%;
+  margin-top: 6px;
+  color: #888;
 }
 
 div.postadmin {
-  float:right;
-  width:100px;
-  text-align:right;
-  font-size:90%;
-  margin-top:5px;
-  color:#888;
+  float: right;
+  width: 100px;
+  text-align: right;
+  font-size: 90%;
+  margin-top: 5px;
+  color: #888;
 }
 
 div#content {
-  padding-bottom:20px;
+  padding-bottom: 20px
 }
 
 div#copyright {
-  text-align:center;
-  border-top:1px dotted #888;
-  padding:20px 0;
+  text-align: center;
+  border-top: 1px dotted #888;
+  padding: 20px 0;
 }
 
-div.postadmin *,div.posttail *,div#pager *,address,div.TIME {
-  color:#888;
+div.postadmin *,
+div.posttail *,
+div#pager *,
+address,
+div.TIME {
+  color: #888
 }
 
 div.cmtjs {
-  margin-bottom:50px;
+  margin-bottom: 50px
 }
 
-div#cburl + div + div + div + div + div div.mntitle,div.XML,div.BANNER,div.BANNER + center,div.exHeader,#post table,#adminmenu,.exblog_cpc,.bbs_preview,div.COMMENT:empty {
-  display:none;
+div#cburl + div + div + div + div + div div.mntitle,
+div.XML,
+div.BANNER,
+div.BANNER + center,
+div.exHeader,
+#post table,
+#adminmenu,
+.exblog_cpc,
+.bbs_preview,
+div.COMMENT:empty {
+  display: none
 }
 
-.view_pager,ul#archive_info {
-  margin:10px 0;
+.view_pager,
+ul#archive_info {
+  margin: 10px 0
 }
 
-h2,h2.subj a,h2.subj span,a:hover,div#pager a:hover,div.postadmin a:hover,div.posttail a:hover,div.TIME a:hover,span#archive_name a:hover,h2.subj a[style="display:inline;"]:hover {
-  color:#cd4730;
+h2,
+h2.subj a,
+h2.subj span,
+a:hover,
+div#pager a:hover,
+div.postadmin a:hover,
+div.posttail a:hover,
+div.TIME a:hover,
+span#archive_name a:hover,
+h2.subj a[style="display:inline;"]:hover {
+  color: #cd4730
 }
 
-a:link,a:visited {
-  color:#666;
-  text-decoration:none;
+a:link,
+a:visited {
+  color: #666;
+  text-decoration: none;
 }
 
-dd,dd p {
-  margin:0;
+dd,
+dd p {
+  margin: 0
 }
 
-div.COMMENT_INPUT textarea,div.COMMENT_INPUT input[type="TEXT"],div.COMMENT_INPUT input[type="PASSWORD"] {
-  font-size:90%;
-  border:1px solid #AAA;
-  color:#666;
-  width:320px;
-  padding:4px 2px;
+div.COMMENT_INPUT textarea,
+div.COMMENT_INPUT input[type="TEXT"],
+div.COMMENT_INPUT input[type="PASSWORD"] {
+  font-size: 90%;
+  border: 1px solid #AAA;
+  color: #666;
+  width: 320px;
+  padding: 4px 2px;
 }
 
-div#header ul:after,div#content:after,div.postsubject:after {
-  height:0;
-  visibility:hidden;
-  content:".";
-  display:block;
-  clear:both;
+div#header ul:after,
+div#content:after,
+div.postsubject:after {
+  height: 0;
+  visibility: hidden;
+  content: ".";
+  display: block;
+  clear: both;
 }
 
-div.TIME a:link,div.TIME a:visited {
-  color:#888;
-  text-decoration:none;
+div.TIME a:link,
+div.TIME a:visited {
+  color: #888;
+  text-decoration: none;
 }
 
-span#archive_name a:link,span#archive_name a:visited,span#archive_name,h2.subj a[style="display:inline;"]:link,h2.subj a[style="display:inline;"]:visited {
-  color:#666;
+span#archive_name a:link,
+span#archive_name a:visited,
+span#archive_name,
+h2.subj a[style="display:inline;"]:link,
+h2.subj a[style="display:inline;"]:visited {
+  color: #666
 }
