@@ -1,0 +1,364 @@
+/* Blog parts title invisible */
+div#cburl + div + div + div + div + div div.mntitle {
+  display: none;
+}
+.view_pager {
+    margin: 10px 0;
+}
+.blk .pagenavi { text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #999; padding:5px 0 0 0; margin-bottom:30px;}
+.blk .pagenavi a { background: #FFF; padding: 2px 8px; display: block; display: inline-block; margin: 5px 5px 0 0; color: #666; line-height:2; text-decoration: none; border: 1px solid #E5E5E5; }
+.blk .pagenavi .current { color: #666; background: #E5E5E5; border: 1px solid #E5E5E5; font-weight: bold; line-height:2;}
+.blk .pagenavi span, .pagenavi a:hover { padding: 2px 8px; display: block; display: inline-block; margin: 5px 5px 0 0; }
+.blk .pagenavi a:hover { font-weight: normal; text-decoration: none; background: #E5E5E5; color: #333; }
+
+.pagenavi {
+    text-align: left;
+}
+
+.archivelist_t li, 
+.archivelist_c li, 
+.archivelist_m li { 
+  list-style-type: none; 
+  list-style: none outside; 
+  margin: 10px 0;
+}
+#all_title_view, 
+#default_title_view { 
+  font-weight:bold;
+  margin:1em 0 10px 0px; 
+}
+
+ul#archive_info div {
+  display: inline;
+}
+div.TIME {
+  margin-left: 5px;
+}
+ul#archive_info {
+  margin: 10px 0;
+}
+
+ul.menu_bookmark {
+  list-style-position: outside;
+}
+html{
+	margin-top:0px!important;
+}
+div.XML,
+div.BANNER,
+div.BANNER + center,
+div.exHeader,
+#post table,
+#adminmenu,
+.exblog_cpc,
+.bbs_preview {
+  display:none;
+}
+div.COMMENT:empty  {
+  display: none;
+}
+#post span table {
+  display: block;
+}
+/* COMMENT */
+div.COMMENT { 
+    border : 1px #d3d3d3 solid; 
+    background : #f7f7f7;
+    padding : 15px;
+    margin : 20px auto 0 0;
+    width: 400px;
+}
+div.COMMENT_BODY { 
+    margin-bottom : 20px; 
+    line-height : 130%;
+}
+div.COMMENT_TAIL { 
+    margin : 8px 0px 5px; 
+    font : 8pt/150% tahoma; 
+    color : #777;
+}
+div.COMMENT_INPUT { 
+    margin-top : 20px; 
+    border-top : 1px #aaa dotted; 
+    padding-top : 20px; 
+}
+div.COMMENT_LINE { 
+    border-top : 1px #aaa dotted; 
+    margin : 10px 0px 15px; 
+}
+/* COMMENT */
+/* BASE */
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #666;
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0 10px;
+    background: #2d1f13;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 13px;
+    *font-size: small;
+    *font: x-small;
+}
+p
+{
+    margin: 0.8em 0;
+}
+h2,
+h3{
+    margin: 0 0 0 0;
+    line-height: 1.2;
+}
+h1 a{
+    display: block;
+    width: 253px;
+    height: 49px;
+    background: transparent url(http://coupe-baguette.com/assets/cb_logo.jpg) 0 0 no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+div#header .title{
+    color: #6B492D;
+}
+div#sitename{
+    position: relative;
+}
+div#ruby{
+    top: 22px;
+    left: 333px;
+    position: absolute;
+}
+div#blogimg{
+    top: 4px;
+    left: 252px;
+    position: absolute;
+}
+h2 {
+    font-size: 120%;
+}
+h2,
+h2.subj a,
+h2.subj span {
+    color: #cd4730;
+}
+h3{
+    margin: 1.2em 10px 0.2em 10px;
+    font-size: 110%;
+}
+a:link{
+    color: #666;
+    text-decoration:none;
+}
+a:visited{
+    color: #666;
+    text-decoration:none;
+}
+a:hover{
+    color: #cd4730;
+}
+ul,
+ol,
+dl {
+    margin: 0.8em 0;
+    padding: 1px 0px;
+    list-style-position: inside;
+}
+dt,
+dt label,
+div.mntitle
+{
+    color: #8B4513;
+}
+dt
+{
+    margin: 0.8em 10px 0 0;
+}
+dd{
+    margin: 0 0;
+}
+dd p{
+    margin: 0 0;
+}
+div.COMMENT_INPUT textarea {
+    font-size: 90%;
+    border:1px solid #AAA;
+    color:#666666;
+    padding:4px 2px;
+    width: 320px;
+}
+div.COMMENT_INPUT input[type="TEXT"],
+div.COMMENT_INPUT input[type="PASSWORD"] {
+    font-size: 90%;
+    border:1px solid #AAA;
+    color:#666666;
+    padding:4px 2px;
+    width: 320px;
+}
+div.COMMENT_INPUT input[type="SUBMIT"] {
+    padding:7px;
+    background-color: #F5F5F5;
+    border: 1px solid #AAA;
+    color:#666;
+    text-decoration:none;
+    height: auto!important;
+    width: 100px!important;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* BASE */
+div#header,
+div#content,
+div#footer{
+    margin: auto;
+    padding: 0px 30px;
+    width: 831px;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+div#footer {
+/*
+    padding: 10px 30px 10px 30px;
+*/
+    font-size: 90%;
+}
+div#pager {
+    margin-bottom: 5px;
+}
+div#post{
+    float: left;
+    width: 630px;
+    background-color: #FFFFFF;
+}
+div#sidemenu{
+    margin: 0 0 0 20px;
+    float: right;
+    width: 170px; 
+    background-color: #FFFFFF;
+}
+div#header{
+    padding-top: 6px;
+    position: relative;
+}
+div#header div.description {
+    position: relative;
+    padding-bottom: 15px;
+/*
+    border-bottom: 1px dotted #888;
+*/
+}
+div#header ul {
+    margin: 0 0;
+    padding: 10px 0;
+}
+div#header ul:after{
+    height: 0;
+    visibility: hidden;
+    content: ".";
+    display: block;
+    clear: both;
+}
+div#content:after{
+    height: 0;
+    visibility: hidden;
+    content: ".";
+    display: block;
+    clear: both;
+}
+.menuitem {
+    margin: 20px 0;
+}
+.mntitle {
+    border-bottom: 1px solid #AAA;
+}
+div#logoimage {
+    margin-top: 20px;
+}
+div.postsubject {
+    margin-top: 20px;
+    height: 22px;
+    border-bottom: 1px solid #AAA;
+}
+h2.subj {
+    float: left;
+    width: auto;
+}
+div.postdate {
+    float: right;
+    width: 100px;
+    text-align: right;  
+    font-size: 90%;
+    margin-top: 6px;
+    color: #888;
+}
+div.postadmin {
+    float: right;
+    width: 100px;
+    text-align: right;  
+    font-size: 90%;
+    margin-top: 5px;
+    color: #888;
+}
+div.postsubject:after {
+    height: 0;
+    visibility: hidden;
+    content: ".";
+    display: block;
+    clear: both;
+}
+div#content {
+    padding-bottom: 20px;
+}
+div#copyright {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px dotted #888;
+}
+div.postadmin *,
+div.posttail *,
+div#pager *,
+address,
+div.TIME {
+    color: #888888;
+/*
+    font-size: 80%;
+*/
+}
+div#pager a:hover,
+div.postadmin a:hover,
+div.posttail a:hover {
+    color: #cd4730;
+}
+div.TIME a:link{
+    color: #888888;
+    text-decoration:none;
+}
+div.TIME a:visited{
+    color: #888888;
+    text-decoration:none;
+}
+div.TIME a:hover{
+    color: #cd4730;
+}
+div.cmtjs {
+    margin-bottom: 50px;
+}
+span#archive_name a:link,
+span#archive_name a:visited,
+span#archive_name {
+  color: #666;
+}
+h2.subj a[style="display:inline;"]:link,
+h2.subj a[style="display:inline;"]:visited {
+  color: #666;
+}
+
+span#archive_name a:hover {
+    color: #cd4730;
+}
+h2.subj a[style="display:inline;"]:hover {
+    color: #cd4730;
+}
