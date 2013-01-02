@@ -8,9 +8,8 @@
 }
 
 .blk .pagenavi a {
-  background: #FFF;
   display: inline-block;
-  color: #666;
+  color: #333;
   line-height: 2;
   text-decoration: none;
   border: 1px solid #E5E5E5;
@@ -19,7 +18,7 @@
 }
 
 .blk .pagenavi .current {
-  color: #666;
+  color: #333;
   background: #E5E5E5;
   border: 1px solid #E5E5E5;
   font-weight: 700;
@@ -110,7 +109,7 @@ div.COMMENT_LINE {
 
 * {
   line-height: 1.5;
-  color: #666;
+  color: #333;
   font-weight: 400;
   font-style: normal;
   margin: 0;
@@ -118,8 +117,8 @@ div.COMMENT_LINE {
 }
 
 body {
-  background: #2d1f13;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: #F9F9F9;
+  font-family: "Helvetica","Lucida Grande","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W6","ＭＳ Ｐゴシック",Osaka,sans-serif;
   font-size: small;
   font: x-small;
   margin: 0 10px;
@@ -135,33 +134,37 @@ h3 {
   margin: 0;
 }
 
-h1 a {
-  display: block;
-  width: 253px;
-  height: 49px;
-  background: transparent url(http://coupe-baguette.com/assets/cb_logo.jpg) 0 0 no-repeat;
-  text-indent: -9999px;
-  overflow: hidden;
+#header {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 
-div#header .title {
-  color: #6B492D
+#logo h1,
+#logo div {
+  display: inline;
+}
+
+#logo h1 img {
+  margin-bottom: -8px;
+  width: 203px;
+  height: 30px;
+}
+
+#logo h1 a, #ruby, #shop-copy {
+  color: #6B492D !important;
+}
+
+#ruby {
+  margin-left: -7px;
+}
+
+h1 a {
+  font-size: 26px;
+  font-weight: bold;
 }
 
 div#sitename {
   position: relative
-}
-
-div#ruby {
-  top: 22px;
-  left: 333px;
-  position: absolute;
-}
-
-div#blogimg {
-  top: 4px;
-  left: 252px;
-  position: absolute;
 }
 
 h2 {
@@ -194,7 +197,7 @@ dt {
 div.COMMENT_INPUT input[type="SUBMIT"] {
   background-color: #F5F5F5;
   border: 1px solid #AAA;
-  color: #666;
+  color: #333;
   text-decoration: none;
   height: auto!important;
   width: 100px!important;
@@ -206,15 +209,9 @@ div.COMMENT_INPUT input[type="SUBMIT"] {
 div#header,
 div#content,
 div#footer {
-  width: 831px;
-  background-color: #FFF;
+  width: 880px;
   text-align: left;
   margin: auto;
-  padding: 0 30px;
-}
-
-div#footer {
-  font-size: 90%
 }
 
 div#pager {
@@ -224,24 +221,12 @@ div#pager {
 div#post {
   float: left;
   width: 630px;
-  background-color: #FFF;
 }
 
 div#sidemenu {
   float: right;
   width: 170px;
-  background-color: #FFF;
   margin: 0 0 0 20px;
-}
-
-div#header {
-  padding-top: 6px;
-  position: relative;
-}
-
-div#header div.description {
-  position: relative;
-  padding-bottom: 15px;
 }
 
 div#header ul {
@@ -261,6 +246,24 @@ div#logoimage {
   margin-top: 20px
 }
 
+div#logoimage img {
+  height: 113px;
+  width: 170px;
+}
+
+div#lead-image img {
+  height: 280px;
+  width: 880px;
+}
+
+#lead-image img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
 div.postsubject {
   margin-top: 20px;
   height: 22px;
@@ -278,7 +281,7 @@ div.postdate {
   text-align: right;
   font-size: 90%;
   margin-top: 6px;
-  color: #888;
+  color: #333;
 }
 
 div.postadmin {
@@ -287,17 +290,12 @@ div.postadmin {
   text-align: right;
   font-size: 90%;
   margin-top: 5px;
-  color: #888;
+  color: #333;
 }
 
 div#content {
   padding-bottom: 20px
-}
-
-div#copyright {
-  text-align: center;
-  border-top: 1px dotted #888;
-  padding: 20px 0;
+  margin-top: 10px;
 }
 
 div.postadmin *,
@@ -305,7 +303,7 @@ div.posttail *,
 div#pager *,
 address,
 div.TIME {
-  color: #888
+  color: #333
 }
 
 div.cmtjs {
@@ -345,7 +343,7 @@ h2.subj a[style="display:inline;"]:hover {
 
 a:link,
 a:visited {
-  color: #666;
+  color: #333;
   text-decoration: none;
 }
 
@@ -359,7 +357,7 @@ div.COMMENT_INPUT input[type="TEXT"],
 div.COMMENT_INPUT input[type="PASSWORD"] {
   font-size: 90%;
   border: 1px solid #AAA;
-  color: #666;
+  color: #333;
   width: 320px;
   padding: 4px 2px;
 }
@@ -376,7 +374,7 @@ div.postsubject:after {
 
 div.TIME a:link,
 div.TIME a:visited {
-  color: #888;
+  color: #333;
   text-decoration: none;
 }
 
@@ -385,5 +383,20 @@ span#archive_name a:visited,
 span#archive_name,
 h2.subj a[style="display:inline;"]:link,
 h2.subj a[style="display:inline;"]:visited {
-  color: #666
+  color: #333
+}
+
+#lead-header {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 0 3px 0;
+  margin: 15px 0 15px 0;
+  border-bottom: 1px solid #333;
+}
+
+#footer {
+  margin: 25px auto !important;
+  line-height: 16px;
+  padding-top: 5px;
+  border-top: 1px solid #E6E6E6;
 }

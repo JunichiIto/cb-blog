@@ -1,15 +1,29 @@
 <div id="header">
-  <div id="subtitle" class="title"><$description$></div>
-  <div id="sitename">
-    <h1><$header$></h1>
-    <div id="blogimg">
-      <a href="/"><img src="http://coupe-baguette.com/assets/blog.jpg" alt="Blog" width="76" height="50" border="0"></a>
+  <div id='header-sub'>
+    <div id='shop-copy'>
+      <$description$>
     </div>
-    <div id="ruby" class="title">-クープ バゲット ブログ-</div>
+  </div>
+  <div id='header-main'>
+    <div id='logo'>
+      <h1><a href="/"><img alt="Coupé Baguette" src="http://coupe-baguette-staging.herokuapp.com/assets/cb_logo_tran.png" />&nbsp;</a></h1>
+      <div id='ruby'>
+        -クープ バゲット-
+      </div>
+    </div>
   </div>
   <div id="adminmenu"><$adminmenu type=1$></div>
 </div>
+
 <div id="content">
+  <div id="lead-section">
+    <div id="lead-header">
+      Blog
+    </div>
+    <div id="lead-image">
+      <img alt="Coupé Baguette" src="http://coupe-baguette-staging.herokuapp.com/assets/blog_lead.jpg" />
+    </div>
+  </div>
   <div id="post">
     <div><$post$></div>
     <div id="pager">
@@ -24,8 +38,9 @@
     <div><$xml$></div>
   </div>
 </div>
+
 <div id="footer">
-    <div id="copyright">
-         <address>Copyright (C) Coupé Baguette All rights reserved.</address>
-    </div>
+  <div id='copyright'>
+    Copyright &copy; Coupé Baguette All rights reserved.
+  </div>
 </div>
