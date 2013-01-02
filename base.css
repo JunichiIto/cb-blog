@@ -231,7 +231,6 @@ div#sidemenu {
 
 div#header ul {
   margin: 0;
-  padding: 10px 0;
 }
 
 .menuitem {
@@ -399,4 +398,35 @@ h2.subj a[style="display:inline;"]:visited {
   line-height: 16px;
   padding-top: 5px;
   border-top: 1px solid #E6E6E6;
+}
+
+#header-sub {
+position: relative;
+}
+
+#nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#nav ul {
+  padding: 0;
+}
+
+#nav li {
+  float: left;
+  margin-left: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  list-style: none;
+}
+
+#nav li a {
+  padding: 5px;
+}
+
+a.fb-icon img {
+  width: 16px;
+  height: 16px;
 }
