@@ -435,3 +435,7 @@ a.fb-icon img {
   width: 16px;
   height: 16px;
 }
+
+a img {
+  border: none;
+}
