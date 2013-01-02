@@ -336,7 +336,9 @@ div.postadmin a:hover,
 div.posttail a:hover,
 div.TIME a:hover,
 span#archive_name a:hover,
-h2.subj a[style="display:inline;"]:hover {
+h2.subj a[style="display:inline;"]:hover,
+#sidemenu a:hover,
+#nav a:hover {
   color: #cd4730
 }
 
