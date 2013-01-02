@@ -122,6 +122,7 @@ body {
   font-size: small;
   font: x-small;
   margin: 0 10px;
+  -webkit-text-size-adjust: none;
 }
 
 p {
