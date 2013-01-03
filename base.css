@@ -230,6 +230,10 @@ div#sidemenu {
   margin: 0 0 0 20px;
 }
 
+div#sidemenu input[type="SUBMIT"] {
+  display: none;
+}
+
 div#header ul {
   margin: 0;
 }
@@ -263,12 +267,19 @@ div#lead-image img {
   width: 880px;
 }
 
-#lead-image img {
+#lead-image img,
+#sidemenu input[type="TEXT"] {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+}
+
+#sidemenu input[type="TEXT"] {
+  width: 140px;
+  margin-top: 6px;
+  border: 1px solid #AAA;
 }
 
 div.postsubject {
