@@ -9,7 +9,7 @@
 
 .blk .pagenavi a {
   display: inline-block;
-  color: #333;
+  color: #666;
   line-height: 2;
   text-decoration: none;
   border: 1px solid #E5E5E5;
@@ -18,7 +18,7 @@
 }
 
 .blk .pagenavi .current {
-  color: #333;
+  color: #666;
   background: #E5E5E5;
   border: 1px solid #E5E5E5;
   font-weight: 700;
@@ -36,7 +36,7 @@
   font-weight: 400;
   text-decoration: none;
   background: #E5E5E5;
-  color: #333;
+  color: #666;
 }
 
 .pagenavi {
@@ -109,7 +109,7 @@ div.COMMENT_LINE {
 
 * {
   line-height: 1.5;
-  color: #333;
+  color: #666;
   font-weight: 400;
   font-style: normal;
   margin: 0;
@@ -198,7 +198,7 @@ dt {
 div.COMMENT_INPUT input[type="SUBMIT"] {
   background-color: #F5F5F5;
   border: 1px solid #AAA;
-  color: #333;
+  color: #666;
   text-decoration: none;
   height: auto!important;
   width: 100px!important;
@@ -288,7 +288,7 @@ div.postdate {
   text-align: right;
   font-size: 90%;
   margin-top: 6px;
-  color: #333;
+  color: #666;
 }
 
 div.postadmin {
@@ -297,7 +297,7 @@ div.postadmin {
   text-align: right;
   font-size: 90%;
   margin-top: 5px;
-  color: #333;
+  color: #666;
 }
 
 div#content {
@@ -310,7 +310,7 @@ div.posttail *,
 div#pager *,
 address,
 div.TIME {
-  color: #333
+  color: #666
 }
 
 div.cmtjs {
@@ -352,7 +352,7 @@ h2.subj a[style="display:inline;"]:hover,
 
 a:link,
 a:visited {
-  color: #333;
+  color: #666;
   text-decoration: none;
 }
 
@@ -366,7 +366,7 @@ div.COMMENT_INPUT input[type="TEXT"],
 div.COMMENT_INPUT input[type="PASSWORD"] {
   font-size: 90%;
   border: 1px solid #AAA;
-  color: #333;
+  color: #666;
   width: 320px;
   padding: 4px 2px;
 }
@@ -383,7 +383,7 @@ div.postsubject:after {
 
 div.TIME a:link,
 div.TIME a:visited {
-  color: #333;
+  color: #666;
   text-decoration: none;
 }
 
@@ -392,15 +392,16 @@ span#archive_name a:visited,
 span#archive_name,
 h2.subj a[style="display:inline;"]:link,
 h2.subj a[style="display:inline;"]:visited {
-  color: #333
+  color: #666
 }
 
 #lead-header {
+  color: #444;
   font-size: 18px;
   font-weight: bold;
   padding: 0 0 3px 0;
   margin: 15px 0 15px 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #666;
 }
 
 #footer {
@@ -408,6 +409,10 @@ h2.subj a[style="display:inline;"]:visited {
   line-height: 16px;
   padding-top: 5px;
   border-top: 1px solid #E6E6E6;
+}
+
+#copyright {
+  color: #666;
 }
 
 #header-sub {
@@ -433,6 +438,7 @@ h2.subj a[style="display:inline;"]:visited {
 }
 
 #nav li a {
+  color: #333;
   padding: 5px;
 }
 
