@@ -267,8 +267,7 @@ div#lead-image img {
   width: 880px;
 }
 
-#lead-image img,
-#sidemenu input[type="TEXT"] {
+#lead-image img {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -277,9 +276,17 @@ div#lead-image img {
 }
 
 #sidemenu input[type="TEXT"] {
-  width: 140px;
+  width: 123px;
   margin-top: 6px;
-  border: 1px solid #AAA;
+  padding: 2px 15px 2px 30px;
+  background: url('http://coupe-baguette.com/assets/blog/search.png') no-repeat 8px 3px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  border:1px solid #d0d0d0;
+  background-color:#fcfcfc;
 }
 
 div.postsubject {
