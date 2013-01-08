@@ -164,6 +164,14 @@ h1 a {
   font-weight: bold;
 }
 
+a.fb-icon:hover,
+#logo a:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha( opacity=80 )";
+  -moz-opacity: 0.8;
+}
+
 div#sitename {
   position: relative
 }
@@ -371,7 +379,9 @@ div.TIME a:hover,
 span#archive_name a:hover,
 h2.subj a[style="display:inline;"]:hover,
 #sidemenu a:hover,
-#nav a:hover {
+#nav a:hover,
+#shop-copy a:hover,
+#ruby a:hover {
   color: #cd4730
 }
 
