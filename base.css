@@ -335,15 +335,22 @@ div.cmtjs {
   margin-bottom: 50px
 }
 
-div#cburl + div + div + div + div + div div.mntitle,
 div.XML,
 div.BANNER,
-div.BANNER + center,
 div.exHeader,
 #post table,
 #adminmenu,
 .exblog_cpc,
-.bbs_preview,
+.bbs_preview {
+  display: none
+}
+
+div#cburl + div + div + div + div + div div.mntitle,
+div.BANNER + center {
+  display: none
+}
+
+
 div.COMMENT:empty {
   display: none
 }
