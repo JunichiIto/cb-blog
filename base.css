@@ -151,7 +151,9 @@ h3 {
   height: 30px;
 }
 
-#logo h1 a, #ruby, #shop-copy {
+#logo h1 a,
+#ruby a,
+#shop-copy a {
   color: #6B492D !important;
 }
 
@@ -165,7 +167,8 @@ h1 a {
 }
 
 a.fb-icon:hover,
-#logo a:hover {
+#logo a:hover,
+#shop-copy a:hover {
   opacity: 0.8;
   filter: alpha(opacity=80);
   -ms-filter: "alpha( opacity=80 )";
