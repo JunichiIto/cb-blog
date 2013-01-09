@@ -152,23 +152,18 @@ h3 {
 }
 
 #logo h1 a,
-#ruby a,
-#shop-copy a {
+#shop-copy,
+#ruby {
   color: #6B492D !important;
 }
 
-#ruby {
-  margin-left: -7px;
-}
-
-h1 a {
-  font-size: 26px;
-  font-weight: bold;
+#ruby,
+h1 {
+  font-size: 13px;
 }
 
 a.fb-icon:hover,
-#logo a:hover,
-#shop-copy a:hover {
+#logo h1:hover {
   opacity: 0.8;
   filter: alpha(opacity=80);
   -ms-filter: "alpha( opacity=80 )";
@@ -382,9 +377,7 @@ div.TIME a:hover,
 span#archive_name a:hover,
 h2.subj a[style="display:inline;"]:hover,
 #sidemenu a:hover,
-#nav a:hover,
-#shop-copy a:hover,
-#ruby a:hover {
+#nav a:hover {
   color: #cd4730
 }
 
@@ -455,6 +448,10 @@ h2.subj a[style="display:inline;"]:visited {
 
 #header-sub {
   position: relative;
+}
+
+#header-main {
+  margin-top: 6px;
 }
 
 #nav {
