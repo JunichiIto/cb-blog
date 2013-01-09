@@ -378,11 +378,12 @@ div.postadmin a:hover,
 div.posttail a:hover,
 div.TIME a:hover,
 div.postsubject h2.subj a:hover,
+div.postsubject h2.subj span.subject_cat a:hover,
 #archive_name a:hover,
 #archive_info a:hover,
 #sidemenu a:hover,
 #nav a:hover {
-  color: #cd4730
+  color: #cd4730 !important
 }
 
 h2.subj a[style="display:inline;"]:hover {
