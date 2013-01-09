@@ -1,3 +1,4 @@
+/* CSS3 style selecter should be separated for legacy IEs. */
 .blk .pagenavi {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
@@ -149,6 +150,8 @@ h3 {
   margin-bottom: -8px;
   width: 203px;
   height: 30px;
+  /* For IE6 */
+  position: relative
 }
 
 #logo h1 a,
@@ -374,10 +377,15 @@ div#pager a:hover,
 div.postadmin a:hover,
 div.posttail a:hover,
 div.TIME a:hover,
-span#archive_name a:hover,
-h2.subj a[style="display:inline;"]:hover,
+div.postsubject h2.subj a:hover,
+#archive_name a:hover,
+#archive_info a:hover,
 #sidemenu a:hover,
 #nav a:hover {
+  color: #cd4730
+}
+
+h2.subj a[style="display:inline;"]:hover {
   color: #cd4730
 }
 
@@ -392,7 +400,14 @@ dd p {
   margin: 0
 }
 
-div.COMMENT_INPUT textarea,
+div.COMMENT_INPUT textarea {
+  font-size: 90%;
+  border: 1px solid #AAA;
+  color: #666;
+  width: 320px;
+  padding: 4px 2px;
+}
+
 div.COMMENT_INPUT input[type="TEXT"],
 div.COMMENT_INPUT input[type="PASSWORD"] {
   font-size: 90%;
@@ -420,7 +435,10 @@ div.TIME a:visited {
 
 span#archive_name a:link,
 span#archive_name a:visited,
-span#archive_name,
+span#archive_name {
+  color: #666
+}
+
 h2.subj a[style="display:inline;"]:link,
 h2.subj a[style="display:inline;"]:visited {
   color: #666
