@@ -118,7 +118,9 @@ div.COMMENT_LINE {
 }
 
 body {
-  background: #F9F9F9;
+  background-image: url(http://coupe-baguette.com/assets/body.png);
+  background-size: 50px;
+  background-color: #FAFAFA;
   font-family: "Helvetica","Lucida Grande","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W6","ＭＳ Ｐゴシック",Osaka,sans-serif;
   font-size: small;
   font: x-small;
