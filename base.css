@@ -506,3 +506,14 @@ a.fb-icon img {
 a img {
   border: none;
 }
+
+#logo-img {
+  /* For IE6 */
+  _display: none;
+}
+
+#logo-img-ie6 {
+  display: none;
+  /* For IE6 */
+  _display: inline-block;
+}
