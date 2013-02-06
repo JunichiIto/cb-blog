@@ -352,7 +352,8 @@ div.exHeader,
 #post table,
 #adminmenu,
 .exblog_cpc,
-.bbs_preview {
+.bbs_preview,
+center > div[style="padding:0 0 30px 0;"] {
   display: none
 }
 
@@ -513,7 +514,7 @@ a img {
 }
 
 #logo-img-ie6 {
-  display: none;
   /* For IE6 */
+  display: none;
   _display: inline-block;
 }
