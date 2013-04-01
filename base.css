@@ -41,7 +41,7 @@
 }
 
 .pagenavi {
-  text-align: left
+  text-align: left;
 }
 
 .archivelist_t li,
@@ -59,23 +59,23 @@
 }
 
 ul#archive_info div {
-  display: inline
+  display: inline;
 }
 
 div.TIME {
-  margin-left: 5px
+  margin-left: 5px;
 }
 
 ul.menu_bookmark {
-  list-style-position: outside
+  list-style-position: outside;
 }
 
 html {
-  margin-top: 0!important
+  margin-top: 0!important;
 }
 
 #post span table {
-  display: block
+  display: block;
 }
 
 div.COMMENT {
@@ -129,7 +129,7 @@ body {
 }
 
 p {
-  margin: .8em 0
+  margin: .8em 0;
 }
 
 h2,
@@ -153,7 +153,7 @@ h3 {
   width: 203px;
   height: 30px;
   /* For IE6 */
-  position: relative
+  position: relative;
 }
 
 #logo h1 a,
@@ -176,11 +176,11 @@ a.fb-icon:hover,
 }
 
 div#sitename {
-  position: relative
+  position: relative;
 }
 
 h2 {
-  font-size: 120%
+  font-size: 120%;
 }
 
 h3 {
@@ -199,11 +199,11 @@ dl {
 dt,
 dt label,
 div.mntitle {
-  color: #8B4513
+  color: #8B4513;
 }
 
 dt {
-  margin: .8em 10px 0 0
+  margin: .8em 10px 0 0;
 }
 
 div.COMMENT_INPUT input[type="SUBMIT"] {
@@ -227,7 +227,7 @@ div#footer {
 }
 
 div#pager {
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
 div#post {
@@ -250,15 +250,15 @@ div#header ul {
 }
 
 .menuitem {
-  margin: 20px 0
+  margin: 20px 0;
 }
 
 .mntitle {
-  border-bottom: 1px solid #AAA
+  border-bottom: 1px solid #AAA;
 }
 
 div#logoimage {
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 div#logoimage img {
@@ -330,7 +330,7 @@ div.postadmin {
 }
 
 div#content {
-  padding-bottom: 20px
+  padding-bottom: 20px;
   margin-top: 10px;
 }
 
@@ -339,11 +339,11 @@ div.posttail *,
 div#pager *,
 address,
 div.TIME {
-  color: #666
+  color: #666;
 }
 
 div.cmtjs {
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 div.XML,
@@ -353,23 +353,24 @@ div.exHeader,
 #adminmenu,
 .exblog_cpc,
 .bbs_preview,
-center > div[style="padding:0 0 30px 0;"] {
-  display: none
+center > div[style="padding:0 0 30px 0;"]
+{
+  display: none!important;
 }
 
 div#cburl + div + div + div + div + div div.mntitle,
 div.BANNER + center {
-  display: none
+  display: none;
 }
 
 
 div.COMMENT:empty {
-  display: none
+  display: none;
 }
 
 .view_pager,
 ul#archive_info {
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 h2,
@@ -386,11 +387,11 @@ div.postsubject h2.subj span.subject_cat a:hover,
 #archive_info a:hover,
 #sidemenu a:hover,
 #nav a:hover {
-  color: #cd4730 !important
+  color: #cd4730 !important;
 }
 
 h2.subj a[style="display:inline;"]:hover {
-  color: #cd4730
+  color: #cd4730;
 }
 
 a:link,
@@ -401,7 +402,7 @@ a:visited {
 
 dd,
 dd p {
-  margin: 0
+  margin: 0;
 }
 
 div.COMMENT_INPUT textarea {
@@ -440,12 +441,12 @@ div.TIME a:visited {
 span#archive_name a:link,
 span#archive_name a:visited,
 span#archive_name {
-  color: #666
+  color: #666;
 }
 
 h2.subj a[style="display:inline;"]:link,
 h2.subj a[style="display:inline;"]:visited {
-  color: #666
+  color: #666;
 }
 
 #lead-header {
