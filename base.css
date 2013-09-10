@@ -521,3 +521,7 @@ a img {
   display: none;
   _display: inline-block;
 }
+
+.ydn_im {
+  display: none;
+}
