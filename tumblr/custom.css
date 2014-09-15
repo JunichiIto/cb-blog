@@ -1,3 +1,6 @@
+body, h1, h2, h3, h4, h1 a, h2 a, h3 a, h4 a {
+    font-family: "Helvetica","Lucida Grande","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W6","ＭＳ Ｐゴシック",Osaka,sans-serif;
+}
 .text.post, .photo.post { font-size: 120%; }
 .photo.post p a { color: #919191; }
 .photo.post p a:hover, .postmeta a:hover { color: #cd4730; }
