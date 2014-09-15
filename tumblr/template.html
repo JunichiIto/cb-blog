@@ -122,11 +122,6 @@
 
 {block:Photo}
 
-<div class="permalink">
-  {block:IfNotDisqusShortname}<a href="{Permalink}">&rarr;</a>{/block:IfNotDisqusShortname}
-  {block:Date}{block:IfDisqusShortname}<a href="{Permalink}#disqus_thread"></a>{/block:IfDisqusShortname}{/block:Date}
-</div>
-
 <div class="photo post">
 
 
@@ -239,15 +234,10 @@
 
 {block:Text}
 
-<div class="permalink">
-  {block:IfNotDisqusShortname}<a href="{Permalink}">&rarr;</a>{/block:IfNotDisqusShortname}
-  {block:Date}{block:IfDisqusShortname}<a href="{Permalink}#disqus_thread"></a>{/block:IfDisqusShortname}{/block:Date}
-</div>
-
 <div class="text post">
 
   {block:Title}
-  <h2>{Title}</h2>
+  {block:IfNotDisqusShortname}<h2><a href="{Permalink}">{Title}</a></h2>{/block:IfNotDisqusShortname}
   {/block:Title}
 
   {Body}
