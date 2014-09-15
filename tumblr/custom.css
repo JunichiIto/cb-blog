@@ -1,6 +1,7 @@
 .text.post, .photo.post { font-size: 120%; }
 .photo.post p a { color: #919191; }
-.photo.post p a:hover, postmeta a:hover { color: #cd4730; }
+.photo.post p a:hover, .postmeta a:hover { color: #cd4730; }
+.postmeta a:hover { border-bottom: 1px dotted #DDD; }
 #header h1 a, #description {
     font-family: 'Avalon', sans-serif;
 }
