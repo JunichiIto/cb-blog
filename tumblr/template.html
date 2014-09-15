@@ -103,6 +103,66 @@
 
 {block:Posts}
 
+{block:Photo}
+
+<div class="photo post">
+
+  {LinkOpenTag}
+  <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+  {LinkCloseTag}
+
+  {block:Caption}
+  <p>{Caption}</p>
+  {/block:Caption}
+
+  <div class="postmeta">
+    {block:Date}<a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero} {24Hour}:{Minutes}</a>&nbsp; {/block:Date}
+    {block:HasTags}
+    {block:Tags}
+    <li>
+      <a href="{TagURL}" class="tag">{Tag}</a>
+    </li>
+    {/block:Tags}
+    {/block:HasTags}
+  </div>
+
+</div>
+
+{block:PostNotes}
+  <div>{PostNotes}</div>
+{/block:PostNotes}
+
+{/block:Photo}
+
+{block:Text}
+
+<div class="text post">
+
+  {block:Title}
+  {block:IfNotDisqusShortname}<h2><a href="{Permalink}">{Title}</a></h2>{/block:IfNotDisqusShortname}
+  {/block:Title}
+
+  {Body}
+
+  <div class="postmeta">
+    {block:Date}<a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero} {24Hour}:{Minutes}</a>&nbsp; {/block:Date}
+    {block:HasTags}
+    {block:Tags}
+    <li>
+      <a href="{TagURL}" class="tag">{Tag}</a>
+    </li>
+    {/block:Tags}
+    {/block:HasTags}
+  </div>
+
+</div>
+
+{block:PostNotes}
+<div>{PostNotes}</div>
+{/block:PostNotes}
+
+{/block:Text}
+
 
 {block:Quote}
 
@@ -129,30 +189,6 @@
 
 {/block:Quote}
 
-
-{block:Photo}
-
-<div class="photo post">
-
-
-
-  {LinkOpenTag}
-  <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
-  {LinkCloseTag}
-
-  {block:Caption}
-  <p>{Caption}</p>
-  {/block:Caption}
-
-  <div class="postmeta">{block:Date}<a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero} {24Hour}:{Minutes}</a>&nbsp; {/block:Date}</div>
-
-</div>
-
-{block:PostNotes}
-<div>{PostNotes}</div>
-{/block:PostNotes}
-
-{/block:Photo}
 
 
 {block:Video}
@@ -241,26 +277,6 @@
 
 {/block:Chat}
 
-
-{block:Text}
-
-<div class="text post">
-
-  {block:Title}
-  {block:IfNotDisqusShortname}<h2><a href="{Permalink}">{Title}</a></h2>{/block:IfNotDisqusShortname}
-  {/block:Title}
-
-  {Body}
-
-  <div class="postmeta">{block:Date}<a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero} {24Hour}:{Minutes}</a>&nbsp; {/block:Date}</div>
-
-</div>
-
-{block:PostNotes}
-<div>{PostNotes}</div>
-{/block:PostNotes}
-
-{/block:Text}
 
 
 {block:Audio}
