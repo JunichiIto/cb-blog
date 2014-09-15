@@ -2,4 +2,4 @@
 #header h1 a, #description {
     font-family: 'Avalon', sans-serif;
 }
-.post h2 { color: #cd4730; }
+.post h2 a { color: #cd4730; }
