@@ -92,10 +92,15 @@
   </section>
   <ul class="links">
     <li><a href="http://coupe-baguette.com" class="web-site">coupe-baguette.com</a></li>
-    <li><a href="/archive" class="archive">これまでの記事</a></li>
   </ul>
   <hr>
   <div id="tagCloud"></div><script type="text/javascript" src="//post-theory.com/public/tagcloud/coupe-baguette?tn={Name}&sort=time&mincount=1&scale=false&html=ul&tagct=%20(%24)&scalect=false" async="async"></script>
+
+  <hr>
+
+  <ul class="links">
+    <li><a href="/archive" class="archive">すべての記事</a></li>
+  </ul>
 </aside>
 
 <div id="content">
@@ -118,20 +123,20 @@
   <div class="postmeta">
     {block:Date}<a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero} {24Hour}:{Minutes}</a>&nbsp; {/block:Date}
     {block:HasTags}
-      <ul class="list-inline">
-        {block:Tags}
-          <li>
-            <a href="{TagURL}" class="tag">{Tag}</a>
-          </li>
-        {/block:Tags}
-      </ul>
+    <ul class="list-inline">
+      {block:Tags}
+      <li>
+        <a href="{TagURL}" class="tag">{Tag}</a>
+      </li>
+      {/block:Tags}
+    </ul>
     {/block:HasTags}
   </div>
 
 </div>
 
 {block:PostNotes}
-  <div>{PostNotes}</div>
+<div>{PostNotes}</div>
 {/block:PostNotes}
 
 {/block:Photo}
@@ -149,13 +154,13 @@
   <div class="postmeta">
     {block:Date}<a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero} {24Hour}:{Minutes}</a>&nbsp; {/block:Date}
     {block:HasTags}
-      <ul class="list-inline">
-        {block:Tags}
-          <li>
-            <a href="{TagURL}" class="tag">{Tag}</a>
-          </li>
-        {/block:Tags}
-      </ul>
+    <ul class="list-inline">
+      {block:Tags}
+      <li>
+        <a href="{TagURL}" class="tag">{Tag}</a>
+      </li>
+      {/block:Tags}
+    </ul>
     {/block:HasTags}
   </div>
 
