@@ -1,11 +1,14 @@
-.text.post { font-size: 120%; }
+.text.post, .photo.post { font-size: 120%; }
+.photo.post p a { color: #919191; }
+.photo.post p a:hover, postmeta a:hover { color: #cd4730; }
 #header h1 a, #description {
     font-family: 'Avalon', sans-serif;
 }
 .post h2 a { color: #cd4730; }
 #sidebar { float: right; }
 #content { float: left; }
-#content .text img {
+#content .text img,
+#content .photo img {
     max-width: 500px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
     -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
