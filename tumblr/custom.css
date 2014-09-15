@@ -7,9 +7,11 @@
 }
 .post h2 a { color: #cd4730; }
 #sidebar { float: right; }
+#sidebar hr { border: 1px dotted #DDD; }
 #content { float: left; }
 #content .text img,
-#content .photo img {
+#content .photo img,
+.avatar img {
     max-width: 500px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
     -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
