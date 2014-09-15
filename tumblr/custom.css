@@ -8,6 +8,11 @@
 .post h2 a { color: #cd4730; }
 #sidebar { float: right; }
 #sidebar hr { border: 1px dotted #DDD; }
+#sidebar .facebook,
+#sidebar .online-shop {
+    display: inline-block;
+    margin-right: 5px;
+}
 #content { float: left; }
 #content .text img,
 #content .photo img,
