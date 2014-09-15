@@ -42,30 +42,35 @@
       if (!day) var day = today.getDate();
       var leap_year = false;
       if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) leap_year = true;
-      lom = new Array(31, 28 + leap_year, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+      var lengthOfMonth = new Array(31, 28 + leap_year, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
       var days = 0;
-      for (var i = 0; i < month; i++) days += lom[i];
+      var i = 0;
+      for (i = 0; i < month; i++) days += lengthOfMonth[i];
       var week = Math.floor((year * 365.2425 + days) % 7);
-      var j = 0;
+      var dayOfWeek = 0;
       var calendar = '';
       calendar += "<div class=\"caption\">" + (month + 1) + "月の営業日<\/div>\n<tr>";
       calendar += "<table>\n";
       calendar += "<\/tr>\n<tr>";
-      for (i = 0; i < week; i++, j++) calendar += "<td><\/td>";
-      for (i = 1; i <= lom[month]; i++) {
+      // カレンダー冒頭の空白部分
+      for (i = 0; i < week; i++, dayOfWeek++) calendar += "<td><\/td>";
+      // 1日から末日まで
+      var dayCursor = 1;
+      for (dayCursor = 1; dayCursor <= lengthOfMonth[month]; dayCursor++) {
         calendar += "<td";
         var css = "";
-        if (day == i) css += "today ";
-        if (j >= 5) css += "open ";
+        if (day == dayCursor) css += "today ";
+        if (dayOfWeek >= 5) css += "open ";
         if (css.length > 0) calendar += " class=\"" + css + "\"";
-        calendar += ">" + i + "<\/td>";
-        j++;
-        if (j > 6) {
+        calendar += ">" + dayCursor + "<\/td>";
+        dayOfWeek++;
+        if (dayOfWeek > 6) {
           calendar += "<\/tr>\n<tr>";
-          j = 0;
+          dayOfWeek = 0;
         }
       }
-      for (i = j; i > 6; i++) calendar += "<td><\/td>";
+      // カレンダー末尾の空白部分
+      for (dayCursor = dayOfWeek; dayCursor > 6; dayCursor++) calendar += "<td><\/td>";
       calendar += "<\/tr>\n<\/table>\n";
       return calendar;
     }
