@@ -59,6 +59,13 @@
     #footer, .quote p, .photo p, .video p, .audio p, #content .conversation, .text blockquote { color: {color:Text Alt}; }
 
     #disqus_thread { width: 500px; padding: 0 0 75px 0; }
+
+    .calendar { margin-bottom: 10px; }
+    .calendar .sun { color: #ECACB5; }
+    .calendar caption { text-align: left; }
+    .calendar td { text-align: center; color: #CCC; padding: 0 1px 0 0; line-height: 1.4em;}
+    .calendar .open { color: #555; }
+    .calendar .today { background-color: #D9FFD0; }
   </style>
 
 </head>
@@ -99,15 +106,36 @@
     <li class="online-shop">
       <a href="http://shop.coupe-baguette.com/"><i class="fa fa-shopping-cart"></i></a>
     </li>
+    <li><a href="/archive" class="archive">これまでの記事</a></li>
   </ul>
-  <hr>
-  <div id="tagCloud"></div><script type="text/javascript" src="//post-theory.com/public/tagcloud/coupe-baguette?tn={Name}&sort=time&mincount=1&scale=false&html=ul&tagct=%20(%24)&scalect=false" async="async"></script>
 
   <hr>
+  <div class="calendar">
+    <caption>9月の営業日</caption>
+    <table summary="2014年 9月のカレンダー">
+      <tbody>
+      <!--
+      <tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+      <tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr>
+      -->
+      <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td class="open">5</td><td class="open">6</td></tr>
+      <tr><td class="sun">7</td><td>8</td><td>9</td><td>10</td><td>11</td><td class="open">12</td><td class="open">13</td></tr>
+      <tr><td class="sun">14</td><td>15</td><td class="today">16</td><td>17</td><td>18</td><td class="open">19</td><td class="open">20</td></tr>
+      <tr><td class="sun">21</td><td>22</td><td>23</td><td>24</td><td>25</td><td class="open">26</td><td class="open">27</td></tr>
+      <tr><td class="sun">28</td><td>29</td><td>30</td></tr>
+      </tbody></table>
+  </div>
+  <div class="calendar">
 
-  <ul class="links">
-    <li><a href="/archive" class="archive">すべての記事</a></li>
-  </ul>
+    <caption>10月の営業日</caption>
+    <table summary="2014年 10月のカレンダー">
+      <tr><td></td><td></td><td></td><td>1</td><td>2</td><td class="open">3</td><td class="open">4</td></tr>
+      <tr><td class="sun">5</td><td>6</td><td>7</td><td>8</td><td>9</td><td class="open">10</td><td class="open">11</td></tr>
+      <tr><td class="sun">12</td><td>13</td><td>14</td><td>15</td><td>16</td><td class="open">17</td><td>18</td></tr>
+      <tr><td class="sun">19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="open">24</td><td class="open">25</td></tr>
+      <tr><td class="sun">26</td><td>27</td><td>28</td><td>29</td><td>30</td><td class="open">31</td></tr>
+    </table>
+  </div>
 </aside>
 
 <div id="content">
