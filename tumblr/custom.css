@@ -6,3 +6,4 @@
 #sidebar { float: right; }
 #content { float: left; }
 #content .text img { max-width: 500px; }
+.list-inline { display: inline-block; }
