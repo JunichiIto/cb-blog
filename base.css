@@ -366,6 +366,9 @@ div.BANNER + center {
   display: none;
 }
 
+#post div center div iframe {
+  display: none;
+}
 
 div.COMMENT:empty {
   display: none;
