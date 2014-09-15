@@ -32,6 +32,44 @@
   <meta name="color:Permalink Hover" content="#000000"/>
   <meta name="color:Text Alt" content="#919191"/>
 
+  <script type="text/javascript">
+    // Modified from http://amenti.usamimi.info/calendar.html
+    function cal(year, month, day) {
+      today = new Date();
+      if (!year) var year = today.getFullYear();
+      if (!month) var month = today.getMonth();
+      else month--;
+      if (!day) var day = today.getDate();
+      var leap_year = false;
+      if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) leap_year = true;
+      lom = new Array(31, 28 + leap_year, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+      var days = 0;
+      for (var i = 0; i < month; i++) days += lom[i];
+      var week = Math.floor((year * 365.2425 + days) % 7);
+      var j = 0;
+      var calendar = '';
+      calendar += "<div class=\"caption\">" + (month + 1) + "月の営業日<\/div>\n<tr>";
+      calendar += "<table>\n";
+      calendar += "<\/tr>\n<tr>";
+      for (i = 0; i < week; i++, j++) calendar += "<td><\/td>";
+      for (i = 1; i <= lom[month]; i++) {
+        calendar += "<td";
+        var css = "";
+        if (day == i) css += "today ";
+        if (j >= 5) css += "open ";
+        if (css.length > 0) calendar += " class=\"" + css + "\"";
+        calendar += ">" + i + "<\/td>";
+        j++;
+        if (j > 6) {
+          calendar += "<\/tr>\n<tr>";
+          j = 0;
+        }
+      }
+      for (i = j; i > 6; i++) calendar += "<td><\/td>";
+      calendar += "<\/tr>\n<\/table>\n";
+      return calendar;
+    }
+  </script>
 
   <style type="text/css" media="screen">
 
@@ -111,30 +149,14 @@
 
   <hr>
   <div class="calendar">
-    <caption>9月の営業日</caption>
-    <table summary="2014年 9月のカレンダー">
-      <tbody>
-      <!--
-      <tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
-      <tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr>
-      -->
-      <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td class="open">5</td><td class="open">6</td></tr>
-      <tr><td class="sun">7</td><td>8</td><td>9</td><td>10</td><td>11</td><td class="open">12</td><td class="open">13</td></tr>
-      <tr><td class="sun">14</td><td>15</td><td class="today">16</td><td>17</td><td>18</td><td class="open">19</td><td class="open">20</td></tr>
-      <tr><td class="sun">21</td><td>22</td><td>23</td><td>24</td><td>25</td><td class="open">26</td><td class="open">27</td></tr>
-      <tr><td class="sun">28</td><td>29</td><td>30</td></tr>
-      </tbody></table>
+    <script type="text/javascript">
+      document.write(cal(2014, 9));
+    </script>
   </div>
   <div class="calendar">
-
-    <caption>10月の営業日</caption>
-    <table summary="2014年 10月のカレンダー">
-      <tr><td></td><td></td><td></td><td>1</td><td>2</td><td class="open">3</td><td class="open">4</td></tr>
-      <tr><td class="sun">5</td><td>6</td><td>7</td><td>8</td><td>9</td><td class="open">10</td><td class="open">11</td></tr>
-      <tr><td class="sun">12</td><td>13</td><td>14</td><td>15</td><td>16</td><td class="open">17</td><td>18</td></tr>
-      <tr><td class="sun">19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="open">24</td><td class="open">25</td></tr>
-      <tr><td class="sun">26</td><td>27</td><td>28</td><td>29</td><td>30</td><td class="open">31</td></tr>
-    </table>
+    <script type="text/javascript">
+      document.write(cal(2014, 10));
+    </script>
   </div>
 </aside>
 
