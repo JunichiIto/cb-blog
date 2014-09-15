@@ -3,3 +3,6 @@
     font-family: 'Avalon', sans-serif;
 }
 .post h2 a { color: #cd4730; }
+#sidebar { float: right; }
+#content { float: left; }
+#content .text img { max-width: 500px; }
