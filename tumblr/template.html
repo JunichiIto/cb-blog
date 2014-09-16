@@ -58,9 +58,9 @@
       var week = Math.floor((year * 365.2425 + days) % 7);
       var dayOfWeek = 0;
       var calendar = '';
-      calendar += "<div class=\"caption\">" + (month + 1) + "月の営業日<\/div>\n<tr>";
-      calendar += "<table>\n";
-      calendar += "<\/tr>\n<tr>";
+      calendar += "<div class=\"caption\">" + (month + 1) + "月の営業日<\/div><tr>";
+      calendar += "<table>";
+      calendar += "<\/tr><tr>";
       // カレンダー冒頭の空白部分
       for (i = 0; i < week; i++, dayOfWeek++) calendar += "<td><\/td>";
       // 1日から末日まで
@@ -75,18 +75,26 @@
           var notOpenDay = notOpenDays[idx];
           if (notOpenDay === "" + year + "-" + (month + 1) + "-" + dayCursor) notOpen = true;
         }
-        if (dayOfWeek >= 5 && !notOpen) css += "open ";
+        if (dayOfWeek >= 5) {
+          if (notOpen) {
+            css += "not-open tooltips";
+          } else {
+            css += "open ";
+          }
+        }
         if (css.length > 0) calendar += " class=\"" + css + "\"";
-        calendar += ">" + dayCursor + "<\/td>";
+        calendar += ">" + dayCursor;
+        if (notOpen) calendar += "<span>臨時休業</span>";
+        calendar += "<\/td>";
         dayOfWeek++;
         if (dayOfWeek > 6) {
-          calendar += "<\/tr>\n<tr>";
+          calendar += "<\/tr><tr>";
           dayOfWeek = 0;
         }
       }
       // カレンダー末尾の空白部分
       for (dayCursor = dayOfWeek; dayCursor > 6; dayCursor++) calendar += "<td><\/td>";
-      calendar += "<\/tr>\n<\/table>\n";
+      calendar += "<\/tr><\/table>";
       return calendar;
     }
   </script>
@@ -123,7 +131,44 @@
     .calendar caption { text-align: left; }
     .calendar td { text-align: center; color: #CCC; padding: 0 1px 0 0; line-height: 1.4em;}
     .calendar .open { color: #8a594d; }
-    .calendar .today { background-color: #FFDFE8; }
+    .calendar .not-open { text-decoration: none; }
+    .calendar .today { background-color: #FFDFE8; border-radius: 7px; }
+
+    td.tooltips {
+      position: relative;
+      display: inline;
+    }
+    td.tooltips span {
+      position: absolute;
+      width: 60px;
+      color: #FFFFFF;
+      background: #000000;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      visibility: hidden;
+      border-radius: 6px;
+    }
+    td.tooltips span:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -8px;
+      width: 0; height: 0;
+      border-top: 8px solid #000000;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent;
+    }
+    td:hover.tooltips span {
+      visibility: visible;
+      opacity: 0.8;
+      bottom: 22px;
+      left: 50%;
+      margin-left: -31px;
+      z-index: 999;
+    }
+
   </style>
 
 </head>
@@ -481,3 +526,4 @@
 </body>
 
 </html>
+
