@@ -84,7 +84,7 @@
         }
         if (css.length > 0) calendar += " class=\"" + css + "\"";
         calendar += ">" + dayCursor;
-        if (notOpen) calendar += "<span>臨時休業</span>";
+        if (notOpen) calendar += "<span>お休み</span>";
         calendar += "<\/td>";
         dayOfWeek++;
         if (dayOfWeek > 6) {
@@ -134,6 +134,7 @@
     .calendar .not-open { text-decoration: none; }
     .calendar .today { background-color: #FFDFE8; border-radius: 7px; }
 
+    /* Used http://www.cssportal.com/css-tooltip-generator/ */
     td.tooltips {
       position: relative;
       display: inline;
@@ -141,8 +142,8 @@
     td.tooltips span {
       position: absolute;
       width: 60px;
-      color: #FFFFFF;
-      background: #000000;
+      color: #9A1400;
+      background: #F9B9C2;
       height: 30px;
       line-height: 30px;
       text-align: center;
@@ -156,13 +157,13 @@
       left: 50%;
       margin-left: -8px;
       width: 0; height: 0;
-      border-top: 8px solid #000000;
+      border-top: 8px solid #F9B9C2;
       border-right: 8px solid transparent;
       border-left: 8px solid transparent;
     }
     td:hover.tooltips span {
       visibility: visible;
-      opacity: 0.8;
+      opacity: 0.9;
       bottom: 22px;
       left: 50%;
       margin-left: -31px;
