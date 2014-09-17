@@ -125,6 +125,25 @@
     #footer, .quote p, .photo p, .video p, .audio p, #content .conversation, .text blockquote { color: {color:Text Alt}; }
 
     #disqus_thread { width: 500px; padding: 0 0 75px 0; }
+    
+    .postmeta a, .postmeta a:link { border-bottom: none; font-style: normal; }
+    .posttitle:after {
+      height: 0;
+      visibility: hidden;
+      content: ".";
+      display: block;
+      clear: both;
+    }
+    h2.title {
+      float: left;
+      width: auto;
+    }
+    
+    div.postdate {
+      float: right;
+      width: 100px;
+      text-align: right;
+    }
 
     .calendar { margin-bottom: 10px; }
     .calendar .sun { color: #ECACB5; }
@@ -231,6 +250,40 @@
 
 {block:Posts}
 
+{block:Text}
+
+<div class="text post">
+
+  <div class="posttitle">
+    {block:Title}{block:IfNotDisqusShortname}<h2 class="title"><a href="{Permalink}">{Title}</a></h2>{/block:IfNotDisqusShortname}{/block:Title}
+    <div class="postdate postmeta">
+      {block:Date}<a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</a>{/block:Date}
+    </div>
+  </div>
+
+  {Body}
+
+  <div class="postmeta">
+    {block:Date}<a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero} {24Hour}:{Minutes}</a>&nbsp; {/block:Date}
+    {block:HasTags}
+    <ul class="list-inline">
+      {block:Tags}
+      <li>
+        <a href="{TagURL}" class="tag">{Tag}</a>
+      </li>
+      {/block:Tags}
+    </ul>
+    {/block:HasTags}
+  </div>
+
+</div>
+
+{block:PostNotes}
+<div>{PostNotes}</div>
+{/block:PostNotes}
+
+{/block:Text}
+
 {block:Photo}
 
 <div class="photo post">
@@ -263,38 +316,6 @@
 {/block:PostNotes}
 
 {/block:Photo}
-
-{block:Text}
-
-<div class="text post">
-
-  {block:Title}
-  {block:IfNotDisqusShortname}<h2><a href="{Permalink}">{Title}</a></h2>{/block:IfNotDisqusShortname}
-  {/block:Title}
-
-  {Body}
-
-  <div class="postmeta">
-    {block:Date}<a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero} {24Hour}:{Minutes}</a>&nbsp; {/block:Date}
-    {block:HasTags}
-    <ul class="list-inline">
-      {block:Tags}
-      <li>
-        <a href="{TagURL}" class="tag">{Tag}</a>
-      </li>
-      {/block:Tags}
-    </ul>
-    {/block:HasTags}
-  </div>
-
-</div>
-
-{block:PostNotes}
-<div>{PostNotes}</div>
-{/block:PostNotes}
-
-{/block:Text}
-
 
 {block:Quote}
 
@@ -527,4 +548,3 @@
 </body>
 
 </html>
-
